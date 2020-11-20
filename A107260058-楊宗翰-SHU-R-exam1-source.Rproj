@@ -1,0 +1,8 @@
+#1.(a)
+
+library(xlsx)
+install.packages("xlsx")
+
+claculus <- read_excel("Calculus-score-A.csv", skip=1)
+names(claculus)[5:10] <- c("小考1", "小考2", "小考3", "作業", "期末考", "點名")
+head(claculus, 5)
